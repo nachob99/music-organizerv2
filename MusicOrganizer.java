@@ -139,6 +139,7 @@ public class MusicOrganizer
         int index = 0;
         boolean found = false;
         int fileIndex = -1;
+        int size = files.size();
         while (!found && index < files.size())
         {
             String fileName = files.get(index);
