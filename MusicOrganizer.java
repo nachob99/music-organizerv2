@@ -114,6 +114,20 @@ public class MusicOrganizer
             System.out.println("No se han encontrado archivos con ese nombre");
         }
     }
+    /**
+     * Reproduce unos segundos de las canciones de un artista 
+     */
+    public void playSampleOf(String artistName)
+    {
+        for (String fileName : files)
+        {
+            if (fileName.contains(artistName))
+            {
+                player.playSample(fileName);
+            }
+        }
+    }
+
     
      
 }
